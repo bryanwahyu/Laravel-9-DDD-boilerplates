@@ -2,7 +2,7 @@
 
 namespace App\Domain\Shared\VO;
 
-class FloatVO
+final class FloatVO
 {
     protected float $value;
 

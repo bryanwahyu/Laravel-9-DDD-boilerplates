@@ -1,7 +1,7 @@
 <?php
 namespace Domain\Shared\VO;
 
-class StringVO{
+final class StringVO{
     protected string $value;
 
     public function __construct(string $value)

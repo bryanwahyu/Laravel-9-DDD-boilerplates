@@ -1,15 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Domain\Shared\VO;
 
-use Domain\Shared\Exception\InvalidArgumentException;
+use Domain\Shared\Exceptions\InvalidArgumentException;
 use Stringable;
 use Symfony\Component\Uid\Ulid;
 use Domain\Shared\VO\Interfaces\Ulid as InterfacesUlid;
 
-class UlidVO implements Stringable, InterfacesUlid
+final class UlidVO implements Stringable, InterfacesUlid
 {
     private string $value;
 
@@ -47,7 +45,7 @@ class UlidVO implements Stringable, InterfacesUlid
         return $this->value;
     }
 
-    public function equals(UlidInterface $other): bool
+    public function equals(InterfacesUlid $other): bool
     {
         return $this->value() === $other->value();
     }

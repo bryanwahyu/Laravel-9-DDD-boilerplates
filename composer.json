@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
+            "App\\": "app/Application",
             "Infra\\":"app/Infrastructure",
             "Domain\\":"app/Domain",
             "UI\\":"app/UserInterface",

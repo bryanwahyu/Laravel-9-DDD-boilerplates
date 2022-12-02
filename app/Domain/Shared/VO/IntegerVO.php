@@ -1,7 +1,7 @@
 <?php
 namespace Domain\Shared\VO;
 
-class IntegerVO
+final class IntegerVO
 {
     protected int $value;
 
@@ -53,6 +53,6 @@ class IntegerVO
     {
         return $this->value() < 0;
     }
-    
+
 }
 
